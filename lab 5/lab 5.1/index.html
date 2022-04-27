@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script>
+        function hesabla(){
+            var a,b,x,y,w;
+            a=Number(document.form.a.value);
+            b=Number(document.form.b.value);
+            x=Number(document.form.x.value);
+                  
+
+            y = (x*x*(x+1))/b-math.sin(math.pow((x+a),2));
+            w= (x*x*y)/a+math.cos(math.pow((x+b),2));
+
+            document.form.y.value=y;
+            document.form.w.value=w;
+        }
+    </script>
+</head>
+<body>
+    <form  name="form" id="form">
+        <input type="text" name="a"size="20"  > <br>
+        <input type="text" name="b"size="20"  > <br>
+        <input type="text" name="x"size="20"  > <br>
+        <input type="text" name="y"size="20"  > <br>
+        <input type="text" name="w"size="20"  > <br>
+        <input type="button" value="Calcualte" onclick="hesabla()"> <br>
+    </form>
+</body>
+</html>
